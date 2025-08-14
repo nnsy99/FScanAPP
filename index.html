@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -31,6 +31,9 @@
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
                     </ul>
+                    <button id="languageToggle" class="btn btn-outline-primary rounded-pill px-3 mb-2 mb-lg-0 me-2">
+                        <span class="small">中文/English</span>
+                    </button>
                     <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
                             <i class="bi-chat-text-fill me-2"></i>
@@ -196,7 +199,7 @@
         <section class="cta">
             <div class="cta-content">
                 <div class="container px-5">
-                    <h2 class="text-white display-1 lh-1 mb-4">
+                    <h2 class="text-white display-1 lh-1 mb-4" id="cta-title">
                         还在等待什么.
                         <br />
                         赶紧下载体验吧！
@@ -303,5 +306,134 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script>
+        // 中英文翻译映射
+        const translations = {
+            en: {
+                'FScan APP(iOS) - 快速扫码专家': 'FScan APP(iOS) - Fast Scanner Expert',
+                '"专业高效精准的条码识别APP，完美适配各类条码，支持批量快速扫描和数据导出，简洁易用的界面，快速上手，降低学习成本 "': '"A professional, efficient and accurate barcode recognition app that perfectly adapts to various barcodes, supports batch fast scanning and data export, with a concise and easy-to-use interface for quick learning and reduced learning costs."',
+                'FScan APP(iOS) 是一个快速扫码专家，支持扫描二维码、条形码、PDF417等格式的条码。': 'FScan APP(iOS) is a fast scanner expert that supports scanning QR codes, barcodes, PDF417 and other formats.',
+                '批量处理': 'Batch Processing',
+                '毫秒级识别，连续快速解码，智能防重复，适合大量条码快速录入!': 'Millisecond recognition, continuous fast decoding, intelligent anti-duplication, suitable for quick entry of a large number of barcodes!',
+                '相册导入识别': 'Album Import Recognition',
+                '支持识别照片图中条码，无需手动输入，方便快捷！': 'Support recognizing barcodes in photos, no manual input required, convenient and fast!',
+                '智能防重': 'Intelligent Anti-duplication',
+                '重复扫描条码时，自动过滤重复项，避免重复录入！': 'When scanning duplicate barcodes, automatically filter duplicates to avoid duplicate entry!',
+                '灵活导出': 'Flexible Export',
+                '支持导出为Excel、PDF、TXT等格式，方便数据处理和分析！': 'Support export to Excel, PDF, TXT and other formats for easy data processing and analysis!',
+                '实用特性': 'Practical Features',
+                '批量处理 — 支持快速批量扫码录入': 'Batch Processing - Support fast batch scanning and entry',
+                '声音/振动提示 — 即时反馈扫描结果': 'Sound/Vibration Prompt - Instant feedback on scanning results',
+                '保存扫描原图 — 便于后期核对与存档': 'Save Original Scan - Easy for later verification and archiving',
+                '拍照记录 — 无法识别的模糊/破损条码，可拍照留存并手动补录': 'Photo Recording - For unrecognizable blurred/damaged barcodes, take photos and manually record',
+                '远距变焦 —  手势调节放大/缩小，轻松扫描远距离二维码！': 'Long-distance Zoom - Gesture adjustment to zoom in/out, easily scan distant QR codes!',
+                '点击对焦 —  快速锁定清晰度，模糊码也能秒识别': 'Tap to Focus - Quickly lock clarity, blur codes can be recognized in seconds',
+                '还在等待什么.': 'What are you waiting for.',
+                '赶紧下载体验吧！': 'Download and experience now!',
+                '免费下载': 'Free Download',
+                'Get the app now!': '立即获取应用！',
+                'FScan 2025. All Rights Reserved.': 'FScan 2025. 保留所有权利。',
+                'Privacy': '隐私政策',
+                'Terms': '使用条款',
+                'FAQ': '常见问题',
+                'Send feedback': '发送反馈',
+                'Full name': '全名',
+                'Email address': '电子邮箱',
+                'Phone number': '电话号码',
+                'Message': '留言',
+                'Form submission successful!': '表单提交成功！',
+                'To activate this form, sign up at': '要激活此表单，请注册',
+                'Error sending message!': '发送消息错误！',
+                'Submit': '提交',
+                '中文/English': 'English/中文'
+            },
+            zh: {
+                'FScan APP(iOS) - Fast Scanner Expert': 'FScan APP(iOS) - 快速扫码专家',
+                '"A professional, efficient and accurate barcode recognition app that perfectly adapts to various barcodes, supports batch fast scanning and data export, with a concise and easy-to-use interface for quick learning and reduced learning costs."': '"专业高效精准的条码识别APP，完美适配各类条码，支持批量快速扫描和数据导出，简洁易用的界面，快速上手，降低学习成本 "',
+                'FScan APP(iOS) is a fast scanner expert that supports scanning QR codes, barcodes, PDF417 and other formats.': 'FScan APP(iOS) 是一个快速扫码专家，支持扫描二维码、条形码、PDF417等格式的条码。',
+                'Batch Processing': '批量处理',
+                'Millisecond recognition, continuous fast decoding, intelligent anti-duplication, suitable for quick entry of a large number of barcodes!': '毫秒级识别，连续快速解码，智能防重复，适合大量条码快速录入!',
+                'Album Import Recognition': '相册导入识别',
+                'Support recognizing barcodes in photos, no manual input required, convenient and fast!': '支持识别照片图中条码，无需手动输入，方便快捷！',
+                'Intelligent Anti-duplication': '智能防重',
+                'When scanning duplicate barcodes, automatically filter duplicates to avoid duplicate entry!': '重复扫描条码时，自动过滤重复项，避免重复录入！',
+                'Flexible Export': '灵活导出',
+                'Support export to Excel, PDF, TXT and other formats for easy data processing and analysis!': '支持导出为Excel、PDF、TXT等格式，方便数据处理和分析！',
+                'Practical Features': '实用特性',
+                'Batch Processing - Support fast batch scanning and entry': '批量处理 — 支持快速批量扫码录入',
+                'Sound/Vibration Prompt - Instant feedback on scanning results': '声音/振动提示 — 即时反馈扫描结果',
+                'Save Original Scan - Easy for later verification and archiving': '保存扫描原图 — 便于后期核对与存档',
+                'Photo Recording - For unrecognizable blurred/damaged barcodes, take photos and manually record': '拍照记录 — 无法识别的模糊/破损条码，可拍照留存并手动补录',
+                'Long-distance Zoom - Gesture adjustment to zoom in/out, easily scan distant QR codes!': '远距变焦 —  手势调节放大/缩小，轻松扫描远距离二维码！',
+                'Tap to Focus - Quickly lock clarity, blur codes can be recognized in seconds': '点击对焦 —  快速锁定清晰度，模糊码也能秒识别',
+                'What are you waiting for.': '还在等待什么.',
+                'Download and experience now!': '赶紧下载体验吧！',
+                'Free Download': '免费下载',
+                '立即获取应用！': 'Get the app now!',
+                'FScan 2025. 保留所有权利。': 'FScan 2025. All Rights Reserved.',
+                '隐私政策': 'Privacy',
+                '使用条款': 'Terms',
+                '常见问题': 'FAQ',
+                '发送反馈': 'Send feedback',
+                '全名': 'Full name',
+                '电子邮箱': 'Email address',
+                '电话号码': 'Phone number',
+                '留言': 'Message',
+                '表单提交成功！': 'Form submission successful!',
+                '要激活此表单，请注册': 'To activate this form, sign up at',
+                '发送消息错误！': 'Error sending message!',
+                '提交': 'Submit',
+                'English/中文': '中文/English'
+            }
+        };
+
+        // 获取当前语言（默认为中文）
+        let currentLang = 'zh';
+
+        // 切换语言函数
+        function toggleLanguage() {
+            currentLang = currentLang === 'zh' ? 'en' : 'zh';
+            updatePageLanguage();
+        }
+
+        // 更新页面语言
+        function updatePageLanguage() {
+            // 更新页面标题
+            const titleElement = document.querySelector('title');
+            if (titleElement && translations[currentLang][titleElement.textContent]) {
+                titleElement.textContent = translations[currentLang][titleElement.textContent];
+            }
+
+            // 特别处理引号内的文本
+            document.querySelectorAll('div.h2.fs-1').forEach(element => {
+                const text = element.textContent;
+                if (translations[currentLang][text]) {
+                    element.textContent = translations[currentLang][text];
+                }
+            });
+
+            // 更新所有文本节点
+            document.querySelectorAll('h1, h2, h3, p, a, span, label').forEach(element => {
+                const text = element.textContent.trim();
+                if (text && translations[currentLang][text]) {
+                    element.textContent = translations[currentLang][text];
+                }
+            });
+
+            // 更新语言按钮文本
+            const languageButton = document.getElementById('languageToggle');
+            if (languageButton) {
+                languageButton.querySelector('.small').textContent = translations[currentLang]['中文/English'] || '中文/English';
+            }
+        }
+
+        // 初始化语言切换按钮事件
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageButton = document.getElementById('languageToggle');
+            if (languageButton) {
+                languageButton.addEventListener('click', toggleLanguage);
+            }
+        });
+    </script>
     </body>
 </html>
