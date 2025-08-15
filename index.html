@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>New Age - Start Bootstrap Theme</title>
+        <title>New Age - FScan-快速扫码专家App(iOS)</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -21,7 +21,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand fw-bold" href="#page-top">FScan-快速扫码专家App</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="bi-list"></i>
@@ -51,9 +51,9 @@
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
                             <h1 class="display-1 lh-1 mb-3">FScan APP(iOS) - 快速扫码专家</h1>
-                            <p class="lead fw-normal text-muted mb-5">FScan APP(iOS) 是一个快速扫码专家，支持扫描二维码、条形码、PDF417等格式的条码。</p>
+                            <p class="lead fw-normal text-muted mb-5">FScan APP(iOS) 是一个快速扫码应用，它支持连续扫描各种条码，并提供了扫描结果数据管理、分享、备注等功能。</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
+                                <!-- <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>-->
                                 <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
                             </div>
                         </div>
@@ -110,6 +110,7 @@
                                 <div class="col-md-6 mb-5">
                                     <!-- Feature item-->
                                     <div class="text-center">
+                                        <!--图标来来源于图标库 https://icons.getbootstrap.com/ -->
                                         <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">批量处理</h3>
                                         <p class="text-muted mb-0">毫秒级识别，连续快速解码，智能防重复，适合大量条码快速录入!</p>
@@ -128,7 +129,7 @@
                                 <div class="col-md-6 mb-5 mb-md-0">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
+                                        <i class="bi bi-list-stars icon-feature text-gradient d-block mb-3"></i>                                       
                                         <h3 class="font-alt">智能防重</h3>
                                         <p class="text-muted mb-0">重复扫描条码时，自动过滤重复项，避免重复录入！</p>
                                     </div>
@@ -136,7 +137,7 @@
                                 <div class="col-md-6">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
+                                        <i class="bi-share icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">灵活导出</h3>
                                         <p class="text-muted mb-0">支持导出为Excel、PDF、TXT等格式，方便数据处理和分析！</p>
                                     </div>
@@ -180,17 +181,29 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">实用特性</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">批量处理 — 支持快速批量扫码录入<br>
-声音/振动提示 — 即时反馈扫描结果<br>
-保存扫描原图 — 便于后期核对与存档<br>
-拍照记录 — 无法识别的模糊/破损条码，可拍照留存并手动补录<br>
-远距变焦 —  手势调节放大/缩小，轻松扫描远距离二维码！<br>
-点击对焦 —  快速锁定清晰度，模糊码也能秒识别<br>
-</p>
+                        <h2 class="display-4 lh-1 mb-4">为什么选择<br>FScan App？</h2>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">
+                        高精度，批量快速扫描<br>
+                        支持多种条码类型<br>
+                        声音和振动提示，即时反馈扫描结果<br>
+                        简洁易用的界面，专注扫码，高效使用<br>
+                        高效查询，输入条码部分内容可快速定位<br>
+                        时间轴视图，按日期自动归类数据，快速回溯<br>
+                        多语言支持，暗黑模式<br>
+                        隐私保护，数据仅存本地，安全无忧<br>
+                        </p>
                     </div>
-                    <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="px-5 px-sm-0 position-relative">
+                            <img class="img-fluid" 
+                                 src="assets/img/demo1.png" 
+                                 alt="手机屏幕截图"
+                                 style="width: 240px; height: 520px;  /* 原尺寸的3/4 */
+                                box-shadow: 0 0 15px rgba(0,0,0,0.2);
+                                border-radius: 30px !important;
+                                transform: scale(0.95);">
+                            <div class="device-frame"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,7 +213,7 @@
             <div class="cta-content">
                 <div class="container px-5">
                     <h2 class="text-white display-1 lh-1 mb-4" id="cta-title">
-                        还在等待什么.
+                        还在等待什么?.
                         <br />
                         赶紧下载体验吧！
                     </h2>
@@ -213,7 +226,7 @@
             <div class="container px-5">
                 <h2 class="text-center text-white font-alt mb-4">Get the app now!</h2>
                 <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                    <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
+                    <!-- <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>-->
                     <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
                 </div>
             </div>
@@ -247,16 +260,17 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- https://formspree.io/ 表单ID -->
+                        <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Full name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" type="email" name="_replyto" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
@@ -269,7 +283,7 @@
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
@@ -307,10 +321,13 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script>
-        // 中英文翻译映射
+        // 中英文翻译映射 //中文:英文
         const translations = {
             en: {
                 'FScan APP(iOS) - 快速扫码专家': 'FScan APP(iOS) - Fast Scanner Expert',
+                'FScan APP(iOS) 是一个快速扫码应用，它支持连续扫描各种条码，并提供了扫描结果数据管理、分享、备注等功能。': 'FScan APP(iOS) is a fast scanning application that supports continuous scanning of various barcodes and provides functions such as scan result data management, sharing, and notes.',
+                '功能特点':'Features',
+                '下载应用':'Download',
                 '"专业高效精准的条码识别APP，完美适配各类条码，支持批量快速扫描和数据导出，简洁易用的界面，快速上手，降低学习成本 "': '"A professional, efficient and accurate barcode recognition app that perfectly adapts to various barcodes, supports batch fast scanning and data export, with a concise and easy-to-use interface for quick learning and reduced learning costs."',
                 'FScan APP(iOS) 是一个快速扫码专家，支持扫描二维码、条形码、PDF417等格式的条码。': 'FScan APP(iOS) is a fast scanner expert that supports scanning QR codes, barcodes, PDF417 and other formats.',
                 '批量处理': 'Batch Processing',
@@ -323,32 +340,30 @@
                 '支持导出为Excel、PDF、TXT等格式，方便数据处理和分析！': 'Support export to Excel, PDF, TXT and other formats for easy data processing and analysis!',
                 '实用特性': 'Practical Features',
                 '批量处理 — 支持快速批量扫码录入': 'Batch Processing - Support fast batch scanning and entry',
-                '声音/振动提示 — 即时反馈扫描结果': 'Sound/Vibration Prompt - Instant feedback on scanning results',
-                '保存扫描原图 — 便于后期核对与存档': 'Save Original Scan - Easy for later verification and archiving',
-                '拍照记录 — 无法识别的模糊/破损条码，可拍照留存并手动补录': 'Photo Recording - For unrecognizable blurred/damaged barcodes, take photos and manually record',
-                '远距变焦 —  手势调节放大/缩小，轻松扫描远距离二维码！': 'Long-distance Zoom - Gesture adjustment to zoom in/out, easily scan distant QR codes!',
-                '点击对焦 —  快速锁定清晰度，模糊码也能秒识别': 'Tap to Focus - Quickly lock clarity, blur codes can be recognized in seconds',
-                '还在等待什么.': 'What are you waiting for.',
+                '还在等待什么?.': 'What are you waiting for?',
                 '赶紧下载体验吧！': 'Download and experience now!',
                 '免费下载': 'Free Download',
-                'Get the app now!': '立即获取应用！',
-                'FScan 2025. All Rights Reserved.': 'FScan 2025. 保留所有权利。',
-                'Privacy': '隐私政策',
-                'Terms': '使用条款',
-                'FAQ': '常见问题',
-                'Send feedback': '发送反馈',
-                'Full name': '全名',
-                'Email address': '电子邮箱',
-                'Phone number': '电话号码',
-                'Message': '留言',
-                'Form submission successful!': '表单提交成功！',
-                'To activate this form, sign up at': '要激活此表单，请注册',
-                'Error sending message!': '发送消息错误！',
-                'Submit': '提交',
+                '立即获取应用！': 'Get the app now!',
+                'FScan 2025. 保留所有权利。': 'FScan 2025. All Rights Reserved.',
+                 '隐私政策': 'Privacy',
+                '使用条款': 'Terms',
+                '常见问题': 'FAQ',
+                '发送反馈': 'Send feedback',
+                '全名': 'Full name',
+                '电子邮箱': 'Email address',
+                '电话号码': 'Phone number',
+                '留言': 'Message',
+                '表单提交成功！': 'Form submission successful!',
+                '要激活此表单，请注册': 'To activate this form, sign up at',
+                '发送消息错误！': 'Error sending message!',
+                '提交': 'Submit',                
                 '中文/English': 'English/中文'
             },
             zh: {
                 'FScan APP(iOS) - Fast Scanner Expert': 'FScan APP(iOS) - 快速扫码专家',
+                'FScan APP(iOS) is a fast scanning application that supports continuous scanning of various barcodes and provides functions such as scan result data management, sharing, and notes.': 'FScan APP(iOS) 是一个快速扫码应用，它支持连续扫描各种条码，并提供了扫描结果数据管理、分享、备注等功能。',
+                'Features': '功能特点',
+                'Download': '下载应用',
                 '"A professional, efficient and accurate barcode recognition app that perfectly adapts to various barcodes, supports batch fast scanning and data export, with a concise and easy-to-use interface for quick learning and reduced learning costs."': '"专业高效精准的条码识别APP，完美适配各类条码，支持批量快速扫描和数据导出，简洁易用的界面，快速上手，降低学习成本 "',
                 'FScan APP(iOS) is a fast scanner expert that supports scanning QR codes, barcodes, PDF417 and other formats.': 'FScan APP(iOS) 是一个快速扫码专家，支持扫描二维码、条形码、PDF417等格式的条码。',
                 'Batch Processing': '批量处理',
@@ -360,29 +375,23 @@
                 'Flexible Export': '灵活导出',
                 'Support export to Excel, PDF, TXT and other formats for easy data processing and analysis!': '支持导出为Excel、PDF、TXT等格式，方便数据处理和分析！',
                 'Practical Features': '实用特性',
-                'Batch Processing - Support fast batch scanning and entry': '批量处理 — 支持快速批量扫码录入',
-                'Sound/Vibration Prompt - Instant feedback on scanning results': '声音/振动提示 — 即时反馈扫描结果',
-                'Save Original Scan - Easy for later verification and archiving': '保存扫描原图 — 便于后期核对与存档',
-                'Photo Recording - For unrecognizable blurred/damaged barcodes, take photos and manually record': '拍照记录 — 无法识别的模糊/破损条码，可拍照留存并手动补录',
-                'Long-distance Zoom - Gesture adjustment to zoom in/out, easily scan distant QR codes!': '远距变焦 —  手势调节放大/缩小，轻松扫描远距离二维码！',
-                'Tap to Focus - Quickly lock clarity, blur codes can be recognized in seconds': '点击对焦 —  快速锁定清晰度，模糊码也能秒识别',
-                'What are you waiting for.': '还在等待什么.',
+                'What are you waiting for?': '还在等待什么?',
                 'Download and experience now!': '赶紧下载体验吧！',
                 'Free Download': '免费下载',
-                '立即获取应用！': 'Get the app now!',
-                'FScan 2025. 保留所有权利。': 'FScan 2025. All Rights Reserved.',
-                '隐私政策': 'Privacy',
-                '使用条款': 'Terms',
-                '常见问题': 'FAQ',
-                '发送反馈': 'Send feedback',
-                '全名': 'Full name',
-                '电子邮箱': 'Email address',
-                '电话号码': 'Phone number',
-                '留言': 'Message',
-                '表单提交成功！': 'Form submission successful!',
-                '要激活此表单，请注册': 'To activate this form, sign up at',
-                '发送消息错误！': 'Error sending message!',
-                '提交': 'Submit',
+                'Get the app now!': '立即获取应用！',
+                'FScan 2025. 保留所有权利。': 'FScan 2025. All Rights Reserved.',                
+                'Privacy': '隐私政策',
+                'Terms': '使用条款',
+                'FAQ': '常见问题',
+                'Send feedback': '发送反馈',
+                'Full name': '全名',
+                'Email address': '电子邮箱',
+                'Phone number': '电话号码',
+                'Message': '留言',
+                'Form submission successful!': '表单提交成功！',
+                'To activate this form, sign up at': '要激活此表单，请注册',
+                'Error sending message!': '发送消息错误！',
+                'Submit': '提交',                
                 'English/中文': '中文/English'
             }
         };
@@ -412,6 +421,38 @@
                 }
             });
 
+            // 特别处理 CTA 标题
+            const ctaTitle = document.getElementById('cta-title');
+            if (ctaTitle) {
+                const lines = ctaTitle.innerHTML.split('<br>');
+                for (let i = 0; i < lines.length; i++) {
+                    const text = lines[i].trim();
+                    if (text && translations[currentLang][text]) {
+                        lines[i] = translations[currentLang][text];
+                    }
+                }
+                ctaTitle.innerHTML = lines.join('<br>');
+            }
+            // 特别处理特性列表（增强版）
+            const featuresList = document.querySelector('.col-12.col-lg-5 .lead.fw-normal.text-muted');
+            if (featuresList) {
+                console.log('找到特性列表元素');
+                const lines = featuresList.innerHTML.split('<br>');
+                for (let i = 0; i < lines.length; i++) {
+                    const text = lines[i].trim();
+                    if (text) {
+                        if (translations[currentLang][text]) {
+                            console.log(`翻译: ${text} -> ${translations[currentLang][text]}`);
+                            lines[i] = translations[currentLang][text];
+                        } else {
+                            console.log(`未找到翻译: ${text}`);
+                        }
+                    }
+                }
+                featuresList.innerHTML = lines.join('<br>');
+            } else {
+                console.log('未找到特性列表元素');
+            }
             // 更新所有文本节点
             document.querySelectorAll('h1, h2, h3, p, a, span, label').forEach(element => {
                 const text = element.textContent.trim();

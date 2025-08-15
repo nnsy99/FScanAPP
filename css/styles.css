@@ -11160,3 +11160,28 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem;
   }
 }
+@media (max-width: 768px) {
+  .device-frame {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    height: 99%;
+    border: 2px solid #333;
+    border-radius: 30px;
+    pointer-events: none;
+  }
+}
+@media (max-width: 576px) {
+  .device-frame {
+    width: 85% !important;
+  }
+}
+@media (max-width: 768px) {
+  .device-frame {
+    width: 85%;
+    height: 97%;
+    transform: translateX(-50%) scale(0.95);
+  }
+}
